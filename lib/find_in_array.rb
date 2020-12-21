@@ -1,3 +1,8 @@
 def find_element_index(array, value_to_find)
-  # Add your solution here
+  array.each do_with_index |element, idx|
+  if array[idx] == value_to_find
+    return array[idx]
+  end
+  
+  return false
 end
